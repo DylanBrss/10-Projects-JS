@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    body {
+        background-image: url(./snow.jpg);
+        background-size: cover;
+        background-position: center center;
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-weight: normal;
+            font-size: 4rem;
+            margin-top: 5rem;
+        }
+
+        .countdown-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 2rem;
+
+            .countdown-el {
+                text-align: center;
+
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .big-text {
+                font-weight: bold;
+                font-size: 6rem;
+                line-height: 1;
+                margin: 0 2rem;
+                text-shadow: 2px 2px 4px #000000;
+                animation: rainbow 20s infinite;
+            }
+        }
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: orange;
+    }
+
+    10% {
+        color: purple;
+    }
+
+    20% {
+        color: red;
+    }
+
+    30% {
+        color: CadetBlue;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    50% {
+        color: coral;
+    }
+
+    60% {
+        color: green;
+    }
+
+    70% {
+        color: cyan;
+    }
+
+    80% {
+        color: DeepPink;
+    }
+
+    90% {
+        color: DodgerBlue;
+    }
+
+    100% {
+        color: orange;
+    }
+}
