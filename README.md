@@ -1,4 +1,4 @@
-# Vidéo Youtube : https://10projects10hours.netlify.app/
+# Vidéo Youtube by Florin Pop : https://10projects10hours.netlify.app/
 
 1. Countdown Timer
 
