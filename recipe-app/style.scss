@@ -1,9 +1,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 
-    body {}
+    body {
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        min-height: 100vh;
+
+        .mobile-container {
+            background-color: #FFFFFF;
+            width: 400px;
+            box-shadow: 0 0 10px 2px #3333331A;
+            border-radius: 3px;
+            overflow: hidden;
+
+            header {
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                #search-term {
+                    border: none;
+                    border-radius: 3px;
+                    padding: 0.5rem 1rem;
+                    font-family: inherit;
+                    background-color: #eee;
+                }
+
+                #search {
+                    background-color: transparent;
+                    border: none;
+                    color: #aaa;
+                    font-size: 1.5rem;
+                    margin-left: 10px;
+                }
+            }
+
+            .fav-container {
+                padding: 0.25rem 1rem;
+                text-align: center;
+                background-color: rgba(233, 199, 255);
+
+                .fav-meals {
+                    display: flex;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 0;
+
+                    li {
+                        cursor: pointer;
+                        position: relative;
+                        width: 75px;
+                        margin: 5px;
+
+                        &:hover .clear {
+                            opacity: 1;
+
+                        }
+
+                        .clear {
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            opacity: 0;
+                            position: absolute;
+                            top: -0.5rem;
+                            right: -0.5rem;
+                            font-size: 1.2rem;
+                        }
+
+                        img {
+                            border: 2px solid #ffffff;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px 2px #3333331a;
+                            object-fit: cover;
+                            height: 70px;
+                            width: 70px;
+                        }
+
+                        span {
+                            display: inline-block;
+                            font-size: 0.9rem;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 75px;
+                        }
+                    }
+                }
+            }
+
+            .meals {
+
+                .meal {
+                    border-radius: 3px;
+                    box-shadow: 0 0 10px 2px #3333331a;
+                    cursor: pointer;
+                    margin: 1.5rem;
+                    overflow: hidden;
+
+                    .meal-header {
+                        position: relative;
+
+                        .random {
+                            position: absolute;
+                            top: 1rem;
+                            background-color: #fff;
+                            padding: 0.25rem 1rem;
+                            border-top-right-radius: 3px;
+                            border-bottom-right-radius: 3px;
+                        }
+
+                        img {
+                            height: 250px;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .meal-body {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 1rem;
+
+                        h4 {
+                            margin: 0;
+                        }
+
+                        .fav-btn {
+                            background-color: transparent;
+                            border: none;
+                            color: rgb(197, 188, 188);
+                            cursor: pointer;
+                            font-size: 1.2rem;
+
+                        }
+
+                        .active {
+                            color: rebeccapurple;
+                        }
+                    }
+                }
+            }
+        }
+
+        .popup-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            .popup {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 0 2rem;
+                position: relative;
+                overflow: auto;
+                max-height: 100vh;
+                max-width: 600px;
+                width: 100%;
+
+                .close-popup {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                }
+
+                .meal-info h1 {
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
