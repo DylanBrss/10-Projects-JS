@@ -1,9 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 
-    body {}
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #2a2a72;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+
+        form {
+            input {
+                background-color: #4c2885;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+                    0 15px 40px rgba(0, 0, 0, 0.1);
+                color: white;
+                font-family: inherit;
+                font-size: 1rem;
+                padding: 1rem;
+                margin-bottom: 2rem;
+
+                &::placeholder {
+                    color: #bbb;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        #main {
+
+
+            .card {
+                background-color: #5815c4;
+                background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+                border-radius: 20px;
+                box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+                    0 15px 40px rgba(0, 0, 0, 0.1);
+                display: flex;
+                padding: 3rem;
+                max-width: 800px;
+
+                .user-image {
+                    .avatar {
+                        border: 10px solid #2a2a72;
+                        border-radius: 50%;
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+
+                .user-info {
+                    color: #eee;
+                    margin-left: 2rem;
+
+                    h2 {
+                        margin-top: 0;
+                    }
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        list-style-type: none;
+                        padding: 0;
+                        max-width: 400px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+
+                            .fa-eye{
+                                color: #D0D1DB;
+                            }
+                            .fa-heart{
+                                color: red;
+                            }
+                            .fa-message{
+                                color: #D0D1DB;
+                            }
+                        }
+                    }
+
+                    .repo {
+                        background-color: #2a2a72;
+                        border-radius: 5px;
+                        display: inline-block;
+                        color: white;
+                        font-size: 0.7rem;
+                        padding: 0.25rem 0.5rem;
+                        margin-right: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }

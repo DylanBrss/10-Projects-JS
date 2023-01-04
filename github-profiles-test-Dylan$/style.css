@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Poppins", sans-serif;
+}
+* body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2E2A68;
+  height: 100vh;
+}
+* body .container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #412977;
+  width: 800px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+* body .container .card .card-img {
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+}
+* body .container .card .card-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+* body .container .card .card-content {
+  margin-left: 50px;
+  max-width: 400px;
+}
+* body .container .card .card-content h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+* body .container .card .card-content h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #D0D1DB;
+}
+* body .container .card .card-content p {
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 400;
+}
+* body .container .card .card-content .card-icons {
+  display: flex;
+  margin-top: 30px;
+}
+* body .container .card .card-content .card-icons li {
+  margin-right: 15px;
+  list-style: none;
+}
+* body .container .card .card-content .card-icons li i.fa-eye {
+  color: #D0D1DB;
+}
+* body .container .card .card-content .card-icons li i.fa-heart {
+  color: red;
+}
+* body .container .card .card-content .card-icons li i.fa-message {
+  color: #D0D1DB;
+}/*# sourceMappingURL=style.css.map */
